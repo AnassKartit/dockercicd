@@ -39,7 +39,8 @@ jobs:
       with:
     # Name of the Resource Group in which the Container Instance will be created
         resource-group: "LEARN" 
-        name: "pythonhelloworld"       
+        name: "pythonhelloworld" 
+        dns-name-label: "dockerhelloworld"
         ports: 80
         registry-login-server: ${{ secrets.DOCKERHUB_REPOSITORY }}
     # Username to log in Container Image Registry Server
