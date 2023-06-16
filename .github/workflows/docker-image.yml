@@ -43,6 +43,7 @@ jobs:
         dns-name-label: "dockerhelloworld"
         image: "anasskartit/dockercicd"
         ports: 80
+        location: "francecentral"
         registry-login-server: ${{ secrets.DOCKERHUB_REPOSITORY }}
     # Username to log in Container Image Registry Server
         registry-username: ${{ secrets.DOCKERHUB_USERNAME }}
