@@ -29,6 +29,11 @@ jobs:
         context: .
         push: true
         tags: ${{ secrets.DOCKERHUB_REPOSITORY }}:latest
+ # Add the Azure login step
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
     - name: Deploy to Azure Container Instances
       uses: Azure/aci-deploy@v1
       with:
