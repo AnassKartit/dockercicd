@@ -44,6 +44,7 @@ jobs:
         image: "anasskartit/dockercicd"
         ports: 80
         location: "francecentral"
+        restart-policy: "OnFailure"
     # Restart Policy for the container(s). Accepted Values are { Always, OnFailure, Never }
      
     # List of secure environment variables for the container. Space seperated values in "key=value" format
