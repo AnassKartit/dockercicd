@@ -44,10 +44,6 @@ jobs:
         image: "anasskartit/dockercicd"
         ports: 80
         location: "francecentral"
-        registry-login-server: ${{ secrets.DOCKERHUB_REPOSITORY }}
-    # Username to log in Container Image Registry Server
-        registry-username: ${{ secrets.DOCKERHUB_USERNAME }}
-        registry-password: ${{ secrets.DOCKERHUB_PASSWORD }}
     # Restart Policy for the container(s). Accepted Values are { Always, OnFailure, Never }
      
     # List of secure environment variables for the container. Space seperated values in "key=value" format
