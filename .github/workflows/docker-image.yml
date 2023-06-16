@@ -41,6 +41,7 @@ jobs:
         resource-group: "LEARN" 
         name: "pythonhelloworld" 
         dns-name-label: "dockerhelloworld"
+        image: "anasskartit/dockercicd"
         ports: 80
         registry-login-server: ${{ secrets.DOCKERHUB_REPOSITORY }}
     # Username to log in Container Image Registry Server
